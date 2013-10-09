@@ -1,12 +1,12 @@
-# revision 23897
+# revision 30466
 # category Package
 # catalog-ctan /macros/xetex/latex/xunicode
-# catalog-date 2011-09-09 14:58:15 +0200
+# catalog-date 2012-07-21 17:20:52 +0200
 # catalog-license lppl1.3
 # catalog-version 0.981
 Name:		texlive-xunicode
 Version:	0.981
-Release:	2
+Release:	3
 Summary:	Generate Unicode characters from accented glyphs
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/xetex/latex/xunicode
@@ -17,6 +17,7 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
+Requires:	texlive-tipa
 
 %description
 The package supports XeTeX's (and other putative future similar
@@ -48,16 +49,3 @@ tipa) which define many commands for single text glyphs.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.981-2
-+ Revision: 757680
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.981-1
-+ Revision: 719953
-- texlive-xunicode
-- texlive-xunicode
-- texlive-xunicode
-
