@@ -6,7 +6,7 @@
 # catalog-version 0.981
 Name:		texlive-xunicode
 Version:	0.981
-Release:	2
+Release:	3
 Summary:	Generate Unicode characters from accented glyphs
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/xetex/latex/xunicode
