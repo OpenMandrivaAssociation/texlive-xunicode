@@ -1,18 +1,12 @@
-# revision 30466
-# category Package
-# catalog-ctan /macros/xetex/latex/xunicode
-# catalog-date 2012-07-21 17:20:52 +0200
-# catalog-license lppl1.3
-# catalog-version 0.981
 Name:		texlive-xunicode
-Version:	0.981
-Release:	12
+Version:	30466
+Release:	1
 Summary:	Generate Unicode characters from accented glyphs
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/xetex/latex/xunicode
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xunicode.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xunicode.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xunicode.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xunicode.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -28,12 +22,12 @@ The package also covers glyphs specified by packages (such as
 tipa) which define many commands for single text glyphs.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -42,7 +36,7 @@ tipa) which define many commands for single text glyphs.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
