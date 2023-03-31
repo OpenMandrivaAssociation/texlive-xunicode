@@ -1,6 +1,6 @@
 Name:		texlive-xunicode
 Version:	30466
-Release:	1
+Release:	2
 Summary:	Generate Unicode characters from accented glyphs
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/xetex/latex/xunicode
