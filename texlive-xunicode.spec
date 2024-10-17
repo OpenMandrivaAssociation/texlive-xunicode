@@ -3,7 +3,7 @@ Version:	30466
 Release:	2
 Summary:	Generate Unicode characters from accented glyphs
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/xetex/latex/xunicode
+URL:		https://www.ctan.org/tex-archive/macros/xetex/latex/xunicode
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xunicode.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xunicode.doc.r%{version}.tar.xz
